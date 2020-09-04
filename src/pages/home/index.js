@@ -14,11 +14,11 @@ import {
 
 class Home extends PureComponent {
 
-  handlerScrollTop(){
+  handlerScrollTop() {
     window.scrollTo(0, 0)
   }
 
-  render(){
+  render() {
     return (
       <HomeWrapper>
         <HomeLeft>
@@ -37,13 +37,13 @@ class Home extends PureComponent {
     )
   }
 
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.props.changeScrollTopShow)
+  }
+
   componentDidMount() {
     this.props.changeHomeData()
     this.bindEvents()
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.props.changeScrollTopShow)
   }
 
   bindEvents() {

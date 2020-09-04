@@ -19,6 +19,7 @@ class Login extends PureComponent {
         </LoginWrapper>
       )
     } else {
+      // 跳转
       return <Redirect to='/' />
     }
 

@@ -77,7 +77,7 @@ export const ListInfo = styled.div`
 `
 
 export const RecommendWrapper = styled.div`
-  margin: 30px 0 ;
+  margin: 30px 0;
   width: 280px;
 `
 

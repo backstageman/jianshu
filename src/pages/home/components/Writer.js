@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react'
 import { WriterWrapper } from '../style'
 
 class Writer extends PureComponent {
-  shouldComponentUpdate
+  // shouldComponentUpdate
 
   render() {
     return (

@@ -19,7 +19,6 @@ export const getHomeInfo = () => {
   return (dispatch) => {
     axios.get('/api/home.json').then((res) => {
       const result = res.data.data
-      // console.log(res)
       dispatch(changeHomeData(result))
     })
   }
